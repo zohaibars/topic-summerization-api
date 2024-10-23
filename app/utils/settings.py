@@ -1,0 +1,26 @@
+from decouple import config
+#
+DEBUG = config('DEBUG', default=False)
+# Postgres Config
+POSTGRES_STT_HOST = config('POSTGRES_STT_HOST', default="")
+POSTGRES_STT_PORT = config('POSTGRES_STT_PORT', default=5432, cast=int)
+POSTGRES_STT_USER = config('POSTGRES_STT_USER')
+POSTGRES_STT_PASSWORD = config('POSTGRES_STT_PASSWORD')
+POSTGRES_STT_DATABASE = config('POSTGRES_STT_DATABASE')
+# LLM Server URLs
+SQL_URL = config("SQL_URL")
+CHAT_URL = config("CHAT_URL")
+# API keys
+GROQ_API_KEY = config('GROQ_API_KEY')
+# Translation url
+TRANSLATION_URL = config('TRANSLATION_URL')
+# Langsmith
+LANGCHAIN_TRACING_V2 = config('LANGCHAIN_TRACING_V2')
+LANGCHAIN_ENDPOINT = config('LANGCHAIN_ENDPOINT')
+LANGCHAIN_PROJECT = config('LANGCHAIN_PROJECT')
+LANGCHAIN_API_KEY = config('LANGCHAIN_API_KEY')
+# OpenAI key
+OPENAI_API_KEY = config('OPENAI_API_KEY')
+# local LLm api key
+LOCAL_LLM_BASE_URL = config("LOCAL_LLM_BASE_URL")
+LOCAL_LLM_API_KEY = config("LOCAL_LLM_API_KEY")

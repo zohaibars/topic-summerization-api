@@ -1,0 +1,24 @@
+# Debug
+DEBUG=TRUE
+# Postgres STT Credentials
+POSTGRES_STT_DATABASE="speech_to_text"
+POSTGRES_STT_USER="ummar"
+POSTGRES_STT_PASSWORD="ticker1234"
+POSTGRES_STT_HOST="192.168.18.161"
+POSTGRES_STT_PORT="5432"
+# llm server_urls
+SQL_URL=""
+CHAT_URL=""
+# API keys
+GROQ_API_KEY=""
+# Translation api url
+TRANSLATION_URL="http://192.168.18.137:8001"
+# Langsmith
+LANGCHAIN_TRACING_V2=true
+LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
+LANGCHAIN_PROJECT="pr-topic-summery-dev"
+LANGCHAIN_API_KEY="<keyhere>"
+OPENAI_API_KEY =<keyhere>
+# local LLM api key
+LOCAL_LLM_BASE_URL = ""
+LOCAL_LLM_API_KEY = ""

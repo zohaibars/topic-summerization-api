@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "topic-summerization-api"
+version = "0.1.0"
+description = "Topic Extraction and summarization using llama-3-70b/8b"
+authors = ["talhaforbmax <talha.m@forbmax.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+pendulum = "^3.0.0"
+fastapi = "^0.110.3"
+uvicorn = "^0.29.0"
+gunicorn = "^22.0.0"
+sqlalchemy = "^2.0.30"
+tiktoken = "0.7.0"
+pymysql = "^1.1.0"
+langsmith = "^0.1.82"
+langchain = "^0.2.2"
+langchain-ollama = "^0.1.0"
+langchain-openai = "^0.1.17"
+langchain-community = "^0.2.2"
+langchain-nvidia_ai_endpoints = "^0.1.1"
+langchain-nvidia-trt = "^0.0.1rc0"
+langchain-groq = "^0.1.4"
+langchainhub = "^0.1.17"
+langgraph = "0.0.62"
+ollama = "^0.3.1"
+datasets = "*"
+huggingface-hub = "^0.23.4"
+pydantic = "^2.7.1"
+python-decouple = "*"
+psycopg2-binary = "^2.9.9"
+chromadb = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
